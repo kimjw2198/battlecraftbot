@@ -6,6 +6,7 @@ import requests
 from json import loads
 from discord.ext import commands
 from discord.ext.commands import bot
+import os
 
 client = discord.Client()
 app = discord.Client()
@@ -162,5 +163,5 @@ async def _kick(ctx, *, user_name: discord.Member, reason=None):
         
             
 
-
-client.run('Njg5MDQwMTg5NDY0NjQxNjM1.XnASGQ.eA_cO4HnL_K9AswCHooGYzhF2TE')
+access_Token = os.environ["BOT_TOKEN"]
+client.run(access_token)
